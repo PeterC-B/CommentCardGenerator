@@ -19,7 +19,7 @@ struct ContentView: View {
                     .padding(.horizontal)
                     .frame(height: 300, alignment: .center)
                     .border(Color.blue, width: 1.0)
-                Button("Button title") {
+                Button("Generate Comment") {
                     commentCard.generateCommentCard()
                 }
                 Text("Difficulty:")

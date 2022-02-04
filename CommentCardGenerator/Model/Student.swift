@@ -14,15 +14,11 @@ class Student {
     let trialsNumber: Int
     let divisions: [Division]
     
-    init(forename: String, surname: String, birthday: Date) {
+    init(forename: String, surname: String, house: String, trialsNumber: Int) {
         self.forename = forename
         self.surname = surname
-        self.birthday = birthday
-        
+        self.house = house
+        self.trialsNumber = trialsNumber
+        self.divisions = []
     }
-    
-    #if DEBUG
-    static let example = Student(forename: "Test", surname: "User", birthday: Date())
-    static let examples = [example]
-    #endif
 }
