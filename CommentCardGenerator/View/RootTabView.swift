@@ -15,7 +15,7 @@ struct RootTabView: View {
                     Image(systemName: "square.and.pencil")
                     Text("Divisions View")
                 }
-            ContentView()
+            StudentInput()
                 .tabItem{
                     Image(systemName: "square.and.pencil")
                     Text ("Generate Comment Card")

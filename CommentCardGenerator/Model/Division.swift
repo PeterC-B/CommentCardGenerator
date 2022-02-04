@@ -9,11 +9,14 @@ import Foundation
 
 class Division {
     let code: String
+    var commentCard: CommentCard
     let teacher: String
     
     init(code: String) {
         self.code = code
+        self.commentCard = CommentCard()
         self.teacher = "MrCormell"
+        
     }
     
     

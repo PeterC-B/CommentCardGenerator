@@ -18,6 +18,8 @@
 		F6D1D02D27AD577B004DBA8B /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D02C27AD577B004DBA8B /* RootTabView.swift */; };
 		F6D1D02F27AD57F8004DBA8B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D02E27AD57F8004DBA8B /* Student.swift */; };
 		F6D1D03127AD5849004DBA8B /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D03027AD5849004DBA8B /* Division.swift */; };
+		F6D1D03327AD59C5004DBA8B /* StudentInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D03227AD59C5004DBA8B /* StudentInput.swift */; };
+		F6D1D03527AD5A30004DBA8B /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D03427AD5A30004DBA8B /* StateController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		F6D1D02C27AD577B004DBA8B /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		F6D1D02E27AD57F8004DBA8B /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		F6D1D03027AD5849004DBA8B /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
+		F6D1D03227AD59C5004DBA8B /* StudentInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInput.swift; sourceTree = "<group>"; };
+		F6D1D03427AD5A30004DBA8B /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				F682A91827AA9E39006DCB6B /* Model */,
 				F682A91727AA9E19006DCB6B /* View */,
 				F682A8ED27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift */,
+				F6D1D03427AD5A30004DBA8B /* StateController.swift */,
 				F682A8F127AA9D6F006DCB6B /* Assets.xcassets */,
 				F682A8F327AA9D6F006DCB6B /* Preview Content */,
 			);
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				F682A8EF27AA9D6E006DCB6B /* ContentView.swift */,
+				F6D1D03227AD59C5004DBA8B /* StudentInput.swift */,
 				F6D1D02C27AD577B004DBA8B /* RootTabView.swift */,
 			);
 			path = View;
@@ -286,9 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F682A8F027AA9D6E006DCB6B /* ContentView.swift in Sources */,
+				F6D1D03327AD59C5004DBA8B /* StudentInput.swift in Sources */,
 				F682A91A27AA9E4F006DCB6B /* CommentCard.swift in Sources */,
 				F6D1D03127AD5849004DBA8B /* Division.swift in Sources */,
 				F6D1D02D27AD577B004DBA8B /* RootTabView.swift in Sources */,
+				F6D1D03527AD5A30004DBA8B /* StateController.swift in Sources */,
 				F6D1D02F27AD57F8004DBA8B /* Student.swift in Sources */,
 				F682A8EE27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift in Sources */,
 			);

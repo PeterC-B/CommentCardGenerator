@@ -7,12 +7,12 @@
 
 import Foundation
 
-class Student {
+class Student: ObservableObject {
     let forename: String
     let surname: String
     let house: String
     let trialsNumber: Int
-    let divisions: [Division]
+    var divisions: [Division]
     
     init(forename: String, surname: String, house: String, trialsNumber: Int) {
         self.forename = forename

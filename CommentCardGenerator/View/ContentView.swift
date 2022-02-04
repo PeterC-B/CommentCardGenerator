@@ -8,19 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var state: StateController
     @State var text: String = "Edit here..."
     @ObservedObject var commentCard = CommentCard()
     private let choices = [0, 1, 2, 3, 4, 5]
     var body: some View {
         NavigationView {
             VStack{
-                TextEditor(text: $commentCard.text)
+                TextEditor(text: $state.student.divisions[0].commentCard.text)
                     .foregroundColor(.secondary)
                     .padding(.horizontal)
                     .frame(height: 300, alignment: .center)
                     .border(Color.blue, width: 1.0)
                 Button("Generate Comment") {
-                    commentCard.generateCommentCard()
+                    if (!state.student.divisions.isEmpty) {
+                        let currentDivision = state.student.divisions[0]
+                        currentDivision.commentCard.generateCommentCard()
+                        
+                    }
+                    
                 }
                 Text("Difficulty:")
                 Picker("Difficulty: ", selection: $commentCard.difficulty) {

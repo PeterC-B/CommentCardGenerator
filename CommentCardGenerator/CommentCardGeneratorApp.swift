@@ -12,6 +12,7 @@ struct CommentCardGeneratorApp: App {
     var body: some Scene {
         WindowGroup {
             RootTabView()
+                .environmentObject(StateController())
         }
     }
 }
