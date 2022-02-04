@@ -14,6 +14,10 @@
 		F682A8FF27AA9D6F006DCB6B /* CommentCardGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A8FE27AA9D6F006DCB6B /* CommentCardGeneratorTests.swift */; };
 		F682A90927AA9D6F006DCB6B /* CommentCardGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A90827AA9D6F006DCB6B /* CommentCardGeneratorUITests.swift */; };
 		F682A90B27AA9D6F006DCB6B /* CommentCardGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A90A27AA9D6F006DCB6B /* CommentCardGeneratorUITestsLaunchTests.swift */; };
+		F682A91A27AA9E4F006DCB6B /* CommentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A91927AA9E4F006DCB6B /* CommentCard.swift */; };
+		F6D1D02D27AD577B004DBA8B /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D02C27AD577B004DBA8B /* RootTabView.swift */; };
+		F6D1D02F27AD57F8004DBA8B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D02E27AD57F8004DBA8B /* Student.swift */; };
+		F6D1D03127AD5849004DBA8B /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D03027AD5849004DBA8B /* Division.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		F682A90427AA9D6F006DCB6B /* CommentCardGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentCardGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F682A90827AA9D6F006DCB6B /* CommentCardGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorUITests.swift; sourceTree = "<group>"; };
 		F682A90A27AA9D6F006DCB6B /* CommentCardGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F682A91927AA9E4F006DCB6B /* CommentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCard.swift; sourceTree = "<group>"; };
+		F6D1D02C27AD577B004DBA8B /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		F6D1D02E27AD57F8004DBA8B /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		F6D1D03027AD5849004DBA8B /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,9 @@
 		F682A8EC27AA9D6D006DCB6B /* CommentCardGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				F682A91827AA9E39006DCB6B /* Model */,
+				F682A91727AA9E19006DCB6B /* View */,
 				F682A8ED27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift */,
-				F682A8EF27AA9D6E006DCB6B /* ContentView.swift */,
 				F682A8F127AA9D6F006DCB6B /* Assets.xcassets */,
 				F682A8F327AA9D6F006DCB6B /* Preview Content */,
 			);
@@ -125,6 +134,25 @@
 				F682A90A27AA9D6F006DCB6B /* CommentCardGeneratorUITestsLaunchTests.swift */,
 			);
 			path = CommentCardGeneratorUITests;
+			sourceTree = "<group>";
+		};
+		F682A91727AA9E19006DCB6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F682A8EF27AA9D6E006DCB6B /* ContentView.swift */,
+				F6D1D02C27AD577B004DBA8B /* RootTabView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F682A91827AA9E39006DCB6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F682A91927AA9E4F006DCB6B /* CommentCard.swift */,
+				F6D1D02E27AD57F8004DBA8B /* Student.swift */,
+				F6D1D03027AD5849004DBA8B /* Division.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F682A8F027AA9D6E006DCB6B /* ContentView.swift in Sources */,
+				F682A91A27AA9E4F006DCB6B /* CommentCard.swift in Sources */,
+				F6D1D03127AD5849004DBA8B /* Division.swift in Sources */,
+				F6D1D02D27AD577B004DBA8B /* RootTabView.swift in Sources */,
+				F6D1D02F27AD57F8004DBA8B /* Student.swift in Sources */,
 				F682A8EE27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
