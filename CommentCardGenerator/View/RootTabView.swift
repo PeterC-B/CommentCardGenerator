@@ -10,15 +10,15 @@ import SwiftUI
 struct RootTabView: View {
     var body: some View {
         TabView {
-            ContentView()
+            DivisionsView()
                 .tabItem{
-                    Image(systemName: "square.and.pencil")
+                    Image(systemName: "person.3")
                     Text("Divisions View")
                 }
-            StudentInput()
+            LoginView()
                 .tabItem{
-                    Image(systemName: "square.and.pencil")
-                    Text ("Generate Comment Card")
+                    Image(systemName: "person.circle.fill")
+                    Text("Login")
                 }
         }
     }

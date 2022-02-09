@@ -1,33 +1,18 @@
 //
-//  ContentView.swift
+//  StudentInput.swift
 //  CommentCardGenerator
 //
-//  Created by Compton-Burnett, Peter (PGW) on 02/02/2022.
+//  Created by Compton-Burnett, Peter (PGW) on 04/02/2022.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-    @EnvironmentObject var state: StateController
-    @State var text: String = "Edit here..."
-    @ObservedObject var commentCard = CommentCard()
+struct GenerateCommentCardView: View {
+    @ObservedObject var commentCard: CommentCard
     private let choices = [0, 1, 2, 3, 4, 5]
     var body: some View {
         NavigationView {
             VStack{
-                TextEditor(text: $state.student.divisions[0].commentCard.text)
-                    .foregroundColor(.secondary)
-                    .padding(.horizontal)
-                    .frame(height: 300, alignment: .center)
-                    .border(Color.blue, width: 1.0)
-                Button("Generate Comment") {
-                    if (!state.student.divisions.isEmpty) {
-                        let currentDivision = state.student.divisions[0]
-                        currentDivision.commentCard.generateCommentCard()
-                        
-                    }
-                    
-                }
                 Text("Difficulty:")
                 Picker("Difficulty: ", selection: $commentCard.difficulty) {
                     ForEach(choices, id: \.self) {
@@ -46,17 +31,22 @@ struct ContentView: View {
                         Text(String($0))
                     }
                 }
+                Spacer()
+                Text(commentCard.text)
+                Spacer()
+                
+                Button("Generate Comment") {
+                    commentCard.generateCommentCard()
+                }
             }
             .navigationTitle("Generate Comment Card")
                 
         }
-        
-        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct StudentInput_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GenerateCommentCardView(commentCard: CommentCard())
     }
 }

@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F66ADD6A27B3CC6A000F63A7 /* DivisionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66ADD6927B3CC6A000F63A7 /* DivisionItem.swift */; };
 		F682A8EE27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A8ED27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift */; };
-		F682A8F027AA9D6E006DCB6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A8EF27AA9D6E006DCB6B /* ContentView.swift */; };
+		F682A8F027AA9D6E006DCB6B /* DivisionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A8EF27AA9D6E006DCB6B /* DivisionsView.swift */; };
 		F682A8F227AA9D6F006DCB6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F682A8F127AA9D6F006DCB6B /* Assets.xcassets */; };
 		F682A8F527AA9D6F006DCB6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F682A8F427AA9D6F006DCB6B /* Preview Assets.xcassets */; };
 		F682A8FF27AA9D6F006DCB6B /* CommentCardGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A8FE27AA9D6F006DCB6B /* CommentCardGeneratorTests.swift */; };
 		F682A90927AA9D6F006DCB6B /* CommentCardGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A90827AA9D6F006DCB6B /* CommentCardGeneratorUITests.swift */; };
 		F682A90B27AA9D6F006DCB6B /* CommentCardGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A90A27AA9D6F006DCB6B /* CommentCardGeneratorUITestsLaunchTests.swift */; };
 		F682A91A27AA9E4F006DCB6B /* CommentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A91927AA9E4F006DCB6B /* CommentCard.swift */; };
+		F6C3FA6E27B3D48C00907924 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3FA6D27B3D48C00907924 /* LoginView.swift */; };
+		F6C3FA7027B3D96F00907924 /* StudentStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3FA6F27B3D96F00907924 /* StudentStateController.swift */; };
 		F6D1D02D27AD577B004DBA8B /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D02C27AD577B004DBA8B /* RootTabView.swift */; };
 		F6D1D02F27AD57F8004DBA8B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D02E27AD57F8004DBA8B /* Student.swift */; };
 		F6D1D03127AD5849004DBA8B /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D03027AD5849004DBA8B /* Division.swift */; };
-		F6D1D03327AD59C5004DBA8B /* StudentInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D03227AD59C5004DBA8B /* StudentInput.swift */; };
-		F6D1D03527AD5A30004DBA8B /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D03427AD5A30004DBA8B /* StateController.swift */; };
+		F6D1D03327AD59C5004DBA8B /* GenerateCommentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D03227AD59C5004DBA8B /* GenerateCommentCardView.swift */; };
+		F6D1D03527AD5A30004DBA8B /* LoginStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D1D03427AD5A30004DBA8B /* LoginStateController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F66ADD6927B3CC6A000F63A7 /* DivisionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionItem.swift; sourceTree = "<group>"; };
 		F682A8EA27AA9D6D006DCB6B /* CommentCardGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F682A8ED27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorApp.swift; sourceTree = "<group>"; };
-		F682A8EF27AA9D6E006DCB6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F682A8EF27AA9D6E006DCB6B /* DivisionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionsView.swift; sourceTree = "<group>"; };
 		F682A8F127AA9D6F006DCB6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F682A8F427AA9D6F006DCB6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F682A8FA27AA9D6F006DCB6B /* CommentCardGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentCardGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,11 +55,13 @@
 		F682A90827AA9D6F006DCB6B /* CommentCardGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorUITests.swift; sourceTree = "<group>"; };
 		F682A90A27AA9D6F006DCB6B /* CommentCardGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F682A91927AA9E4F006DCB6B /* CommentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCard.swift; sourceTree = "<group>"; };
+		F6C3FA6D27B3D48C00907924 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F6C3FA6F27B3D96F00907924 /* StudentStateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentStateController.swift; sourceTree = "<group>"; };
 		F6D1D02C27AD577B004DBA8B /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		F6D1D02E27AD57F8004DBA8B /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		F6D1D03027AD5849004DBA8B /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
-		F6D1D03227AD59C5004DBA8B /* StudentInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInput.swift; sourceTree = "<group>"; };
-		F6D1D03427AD5A30004DBA8B /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
+		F6D1D03227AD59C5004DBA8B /* GenerateCommentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateCommentCardView.swift; sourceTree = "<group>"; };
+		F6D1D03427AD5A30004DBA8B /* LoginStateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +115,8 @@
 				F682A91827AA9E39006DCB6B /* Model */,
 				F682A91727AA9E19006DCB6B /* View */,
 				F682A8ED27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift */,
-				F6D1D03427AD5A30004DBA8B /* StateController.swift */,
+				F6D1D03427AD5A30004DBA8B /* LoginStateController.swift */,
+				F6C3FA6F27B3D96F00907924 /* StudentStateController.swift */,
 				F682A8F127AA9D6F006DCB6B /* Assets.xcassets */,
 				F682A8F327AA9D6F006DCB6B /* Preview Content */,
 			);
@@ -144,9 +151,11 @@
 		F682A91727AA9E19006DCB6B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F682A8EF27AA9D6E006DCB6B /* ContentView.swift */,
-				F6D1D03227AD59C5004DBA8B /* StudentInput.swift */,
+				F682A8EF27AA9D6E006DCB6B /* DivisionsView.swift */,
+				F6D1D03227AD59C5004DBA8B /* GenerateCommentCardView.swift */,
 				F6D1D02C27AD577B004DBA8B /* RootTabView.swift */,
+				F66ADD6927B3CC6A000F63A7 /* DivisionItem.swift */,
+				F6C3FA6D27B3D48C00907924 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,14 +300,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F682A8F027AA9D6E006DCB6B /* ContentView.swift in Sources */,
-				F6D1D03327AD59C5004DBA8B /* StudentInput.swift in Sources */,
+				F682A8F027AA9D6E006DCB6B /* DivisionsView.swift in Sources */,
+				F6D1D03327AD59C5004DBA8B /* GenerateCommentCardView.swift in Sources */,
 				F682A91A27AA9E4F006DCB6B /* CommentCard.swift in Sources */,
 				F6D1D03127AD5849004DBA8B /* Division.swift in Sources */,
 				F6D1D02D27AD577B004DBA8B /* RootTabView.swift in Sources */,
-				F6D1D03527AD5A30004DBA8B /* StateController.swift in Sources */,
+				F6C3FA7027B3D96F00907924 /* StudentStateController.swift in Sources */,
+				F6D1D03527AD5A30004DBA8B /* LoginStateController.swift in Sources */,
 				F6D1D02F27AD57F8004DBA8B /* Student.swift in Sources */,
 				F682A8EE27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift in Sources */,
+				F6C3FA6E27B3D48C00907924 /* LoginView.swift in Sources */,
+				F66ADD6A27B3CC6A000F63A7 /* DivisionItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

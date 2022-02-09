@@ -20,6 +20,8 @@ class CommentCard: ObservableObject {
         The pace of the work is good and I think I learn really well from the teacher.
         My Enjoyment is \(enjoyment)/5 and the difficulty is \(difficulty)
         """
+        
+        
     }
         
         

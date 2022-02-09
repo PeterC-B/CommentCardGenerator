@@ -8,10 +8,10 @@
 import Foundation
 
 class Student: ObservableObject {
-    let forename: String
-    let surname: String
-    let house: String
-    let trialsNumber: Int
+    var forename: String
+    var surname: String
+    var house: String
+    var trialsNumber: Int
     var divisions: [Division]
     
     init(forename: String, surname: String, house: String, trialsNumber: Int) {
