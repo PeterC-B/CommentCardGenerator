@@ -12,7 +12,7 @@ class Division {
     var commentCard: CommentCard
     let teacher: String
     
-    init(code: String) {
+    init(code: String, subject: String) {
         self.code = code
         self.commentCard = CommentCard()
         self.teacher = "MrCormell"

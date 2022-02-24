@@ -8,24 +8,17 @@
 import SwiftUI
 
 struct DivisionsView: View {
-    @EnvironmentObject var state: LoginStateController
+    @EnvironmentObject var state: StudentStateController
     var body: some View {
         NavigationView {
             VStack{
-                if state.loggedIn {
-                    List(state.student.divisions, id: \.self.code){ division in
-                        NavigationLink(destination: GenerateCommentCardView(commentCard: division.commentCard)) {
-                            Text(division.code)
-                        }
+                 List(state.student.divisions, id: \.self.code){ division in
+                    NavigationLink(destination: GenerateCommentCardView(commentCard: division.commentCard)) {
+                        Text(division.code)
+                        
                     }
                 }
-                else {
-                    Text("Please Login")
-                }
-                
-                Button("Login") {
-                    state.loggedIn.toggle()
-                }
+
                
             }
             .navigationTitle("Divisions View")

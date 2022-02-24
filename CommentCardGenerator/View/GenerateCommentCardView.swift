@@ -20,7 +20,7 @@ struct GenerateCommentCardView: View {
                     }
                 }
                 Text("Enjoyment:")
-                Picker("Enjoymment: ", selection: $commentCard.enjoyment) {
+                Picker("Enjoyment: ", selection: $commentCard.enjoyment) {
                     ForEach(choices, id: \.self) {
                         Text(String($0))
                     }

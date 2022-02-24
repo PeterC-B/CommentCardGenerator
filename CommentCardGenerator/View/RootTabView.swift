@@ -15,11 +15,6 @@ struct RootTabView: View {
                     Image(systemName: "person.3")
                     Text("Divisions View")
                 }
-            LoginView()
-                .tabItem{
-                    Image(systemName: "person.circle.fill")
-                    Text("Login")
-                }
         }
     }
 }
