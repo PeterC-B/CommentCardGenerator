@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F63E2EAB27CC2375002A9B8F /* ViewCommentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63E2EAA27CC2375002A9B8F /* ViewCommentCard.swift */; };
 		F66ADD6A27B3CC6A000F63A7 /* DivisionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66ADD6927B3CC6A000F63A7 /* DivisionItem.swift */; };
 		F682A8EE27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A8ED27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift */; };
 		F682A8F027AA9D6E006DCB6B /* DivisionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682A8EF27AA9D6E006DCB6B /* DivisionsView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F63E2EAA27CC2375002A9B8F /* ViewCommentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCommentCard.swift; sourceTree = "<group>"; };
 		F66ADD6927B3CC6A000F63A7 /* DivisionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionItem.swift; sourceTree = "<group>"; };
 		F682A8EA27AA9D6D006DCB6B /* CommentCardGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F682A8ED27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorApp.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				F6D1D02C27AD577B004DBA8B /* RootTabView.swift */,
 				F66ADD6927B3CC6A000F63A7 /* DivisionItem.swift */,
 				F6C3FA6D27B3D48C00907924 /* LoginView.swift */,
+				F63E2EAA27CC2375002A9B8F /* ViewCommentCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				F6C3FA7027B3D96F00907924 /* StudentStateController.swift in Sources */,
 				F6D1D03527AD5A30004DBA8B /* LoginStateController.swift in Sources */,
 				F6D1D02F27AD57F8004DBA8B /* Student.swift in Sources */,
+				F63E2EAB27CC2375002A9B8F /* ViewCommentCard.swift in Sources */,
 				F682A8EE27AA9D6D006DCB6B /* CommentCardGeneratorApp.swift in Sources */,
 				F6C3FA6E27B3D48C00907924 /* LoginView.swift in Sources */,
 				F66ADD6A27B3CC6A000F63A7 /* DivisionItem.swift in Sources */,

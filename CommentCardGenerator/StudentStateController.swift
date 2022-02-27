@@ -13,11 +13,11 @@ class StudentStateController: ObservableObject {
     
     init(student: Student) {
         self.student = student
-        student.divisions.append(Division(code: "CCom1-3", subject: "Computer Science"))
-        student.divisions.append(Division(code: "CPhyz-1", subject: "Physics"))
-        student.divisions.append(Division(code: "De4-2", subject: "Design"))
-        student.divisions.append(Division(code: "Ch3-1", subject: "Chemistry"))
-        student.divisions.append(Division(code: "Ge1-3", subject: "Geography"))
+        student.divisions.append(Division(code: "CCom1-3", subject: "Computer Science", commentCard: "Computer Science Test Comment Card"))
+        //student.divisions.append(Division(code: "CPhyz-1", subject: "Physics"))
+        //student.divisions.append(Division(code: "De4-2", subject: "Design"))
+        //student.divisions.append(Division(code: "Ch3-1", subject: "Chemistry"))
+        //student.divisions.append(Division(code: "Ge1-3", subject: "Geography"))
         //print(student.divisions[0].commentCard.text)
         selectedDivision = student.divisions[0]
     }

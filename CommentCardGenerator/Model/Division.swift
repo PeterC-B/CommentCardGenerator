@@ -13,10 +13,10 @@ struct Division {
     let teacher: String
     let subject: String
     
-    init(code: String, subject: String) {
+    init(code: String, subject: String, commentCard: String) {
         self.code = code
         self.subject = subject
-        self.commentCard = ""
+        self.commentCard = commentCard
         self.teacher = "MrCormell"
         
         

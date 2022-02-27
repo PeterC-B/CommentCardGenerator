@@ -15,6 +15,11 @@ struct RootTabView: View {
                     Image(systemName: "person.3")
                     Text("Divisions View")
                 }
+            GenerateCommentCardView()
+                .tabItem{
+                    Image(systemName: "person.3")
+                    Text("Create Comment Card")
+                }
         }
     }
 }

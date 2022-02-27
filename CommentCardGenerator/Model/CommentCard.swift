@@ -11,14 +11,11 @@ class CommentCard: ObservableObject {
     @Published var difficulty: Int = 0
     @Published var enjoyment: Int = 0
     @Published var effort: Int = 0
-    let code: String
-    let subject: String
+    @Published var code: String = ""
+    @Published var subject: String = ""
     
-    init(code: String, subject: String) {
-        self.subject = subject
-        self.code = code
-        
-    }
+
+
     
     func generateCommentCard() -> String{
         var text = ""

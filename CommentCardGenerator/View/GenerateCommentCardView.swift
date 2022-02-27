@@ -9,16 +9,16 @@ import SwiftUI
 
 struct GenerateCommentCardView: View {
     @EnvironmentObject var state: StudentStateController
-    @State var commentCard: CommentCard
-    @State var generated: Bool = false
-    
-    init(code: String, subject: String) {
-        self.commentCard = CommentCard(code: code, subject: subject)
-    }
+    @State var commentCard: CommentCard = CommentCard()
+    @State var generatedComment: String = ""
+
+
     private let choices = [0, 1, 2, 3, 4, 5]
     var body: some View {
         NavigationView {
             VStack{
+                TextField("Division Code:", text: $commentCard.code)
+                TextField("Subject:", text: $commentCard.subject)
                 Text("Difficulty:")
                 Picker("Difficulty: ", selection: $commentCard.difficulty) {
                     ForEach(choices, id: \.self) {
@@ -37,13 +37,18 @@ struct GenerateCommentCardView: View {
                         Text(String($0))
                     }
                 }
-                Spacer()
-                Text(commentCard)
-                Spacer()
+                
+                if generatedComment != "" {
+                    Text(generatedComment)
+                }
                 
                 Button("Generate Comment") {
-                    commentCard.generateCommentCard()
+                    let result = commentCard.generateCommentCard()
+                    print(result)
+                    generatedComment = result
+                    state.student.divisions.append(Division(code: commentCard.code, subject: commentCard.subject, commentCard: result))
                 }
+                
             }
             .navigationTitle("Generate Comment Card")
                 
@@ -53,6 +58,6 @@ struct GenerateCommentCardView: View {
 
 struct StudentInput_Previews: PreviewProvider {
     static var previews: some View {
-        GenerateCommentCardView(code: "vB3-1", subject: "Computer Science")
+        GenerateCommentCardView()
     }
 }

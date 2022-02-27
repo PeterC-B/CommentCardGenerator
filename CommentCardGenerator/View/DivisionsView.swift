@@ -12,12 +12,14 @@ struct DivisionsView: View {
     var body: some View {
         NavigationView {
             VStack{
-                 List(state.student.divisions, id: \.self.code){ division in
-                     NavigationLink(destination: GenerateCommentCardView(code: division.code, subject: division.subject)) {
-                        Text(division.code)
-                        
+                List(state.student.divisions, id: \.self.code){ division in
+                    Button(division.code){
+                        state.selectedDivision = division
+                        print("Switched")
                     }
                 }
+                NavigationLink("View Comment Card for: \(state.selectedDivision.code)", destination: ViewCommentCard())
+                Spacer()
 
                
             }
