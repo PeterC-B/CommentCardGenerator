@@ -8,21 +8,20 @@
 import Foundation
 
 class CommentCard: ObservableObject {
-    @Published var text: String = "Comment Card will be generated here..."
-    var difficulty: Int = 0
-    var enjoyment: Int = 0
-    var effort: Int = 0
-    var subject: String = "Computer Science"
+    @Published var difficulty: Int = 0
+    @Published var enjoyment: Int = 0
+    @Published var effort: Int = 0
+    let code: String
+    let subject: String
     
-    /*
-    init(subject: String) {
+    init(code: String, subject: String) {
         self.subject = subject
+        self.code = code
         
     }
-     */
     
-    func generateCommentCard() {
-        text = ""
+    func generateCommentCard() -> String{
+        var text = ""
         if enjoyment > 2{
             text = text + "I have really enjoyed " + subject + " so far this half."
         }
@@ -42,7 +41,7 @@ class CommentCard: ObservableObject {
         else {
             text = text + "The pace of the work is quite fast and I think its been really challenging so far. My Enjoyment is \(enjoyment)/5 and the difficulty is \(difficulty)."
         }
-
+        return text
         
         
     }

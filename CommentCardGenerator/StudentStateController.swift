@@ -9,6 +9,7 @@ import Foundation
 
 class StudentStateController: ObservableObject {
     @Published var student: Student
+    @Published var selectedDivision: Division
     
     init(student: Student) {
         self.student = student
@@ -18,5 +19,6 @@ class StudentStateController: ObservableObject {
         student.divisions.append(Division(code: "Ch3-1", subject: "Chemistry"))
         student.divisions.append(Division(code: "Ge1-3", subject: "Geography"))
         //print(student.divisions[0].commentCard.text)
+        selectedDivision = student.divisions[0]
     }
 }

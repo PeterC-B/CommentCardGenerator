@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct GenerateCommentCardView: View {
-    @ObservedObject var commentCard: CommentCard
+    @EnvironmentObject var state: StudentStateController
+    @State var commentCard: CommentCard
+    @State var generated: Bool = false
+    
+    init(code: String, subject: String) {
+        self.commentCard = CommentCard(code: code, subject: subject)
+    }
     private let choices = [0, 1, 2, 3, 4, 5]
     var body: some View {
         NavigationView {
@@ -32,7 +38,7 @@ struct GenerateCommentCardView: View {
                     }
                 }
                 Spacer()
-                Text(commentCard.text)
+                Text(commentCard)
                 Spacer()
                 
                 Button("Generate Comment") {
@@ -47,6 +53,6 @@ struct GenerateCommentCardView: View {
 
 struct StudentInput_Previews: PreviewProvider {
     static var previews: some View {
-        GenerateCommentCardView(commentCard: CommentCard())
+        GenerateCommentCardView(code: "vB3-1", subject: "Computer Science")
     }
 }

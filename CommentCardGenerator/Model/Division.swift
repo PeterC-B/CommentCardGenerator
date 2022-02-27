@@ -7,17 +7,22 @@
 
 import Foundation
 
-class Division {
+struct Division {
     let code: String
-    var commentCard: CommentCard
+    var commentCard: String
     let teacher: String
+    let subject: String
     
     init(code: String, subject: String) {
         self.code = code
-        self.commentCard = CommentCard()
+        self.subject = subject
+        self.commentCard = ""
         self.teacher = "MrCormell"
         
+        
     }
+    
+    
     
     
 }

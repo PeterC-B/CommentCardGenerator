@@ -13,7 +13,7 @@ struct DivisionsView: View {
         NavigationView {
             VStack{
                  List(state.student.divisions, id: \.self.code){ division in
-                    NavigationLink(destination: GenerateCommentCardView(commentCard: division.commentCard)) {
+                     NavigationLink(destination: GenerateCommentCardView(code: division.code, subject: division.subject)) {
                         Text(division.code)
                         
                     }
